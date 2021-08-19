@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Фронтенд Всемогущий. Что умеет веб-браузер</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        @font-face {
+            font-family: "ST-Nizhegorodsky";
+            src: url("fonts/STNizhegorodskyRegular.woff2") format("woff2"),
+                url("fonts/STNizhegorodskyRegular.woff") format("woff");
+            font-weight: lighter;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Gotham Pro";
+            src: url("fonts/GothamPro-Bold.woff2") format("woff2"),
+                url("fonts/GothamPro-Bold.woff") format("woff");
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+        font-family: "Gotham Pro";
+            src: url("fonts/GothamPro.woff2") format("woff2"),
+                url("fonts/GothamPro.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Gotham Pro";
+            src: url("fonts/GothamPro-Medium.woff2") format("woff2"),
+                url("fonts/GothamPro-Medium.woff") format("woff");
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .shower {
+            font-family: "Gotham Pro", sans-serif;
+            color: #37383d;
+            --slide-ratio: calc(16 / 9);
+            --ribbon-size: 40px;
+        }
+
+        .progress::before {
+            background-color: #cb6451;
+        }
+
+        .slide {
+            padding-top: 51px;
+            background-image: url("pictures/GP_DAYS_2.png"), url("pictures/Bg_2.png");
+            background-repeat: no-repeat, no-repeat;
+            background-size: 100px, 100%;
+            background-position: calc(100% - 25px) calc(100% - 25px), center
+        }
+
+        .slide h2:not(.shout) {
+            font-family: "ST-Nizhegorodsky", serif;
+            font-weight: lighter;
+            letter-spacing: .02em;
+        }
+
+        .slide.clear {
+            background-image: none;
+        }
+
+        .slide::after {
+            top: auto;
+            bottom: 0;
+            left: 40px;
+            right: auto;
+            color: initial;
+            background: none;
+        }
+
+        .slide h2.shout {
+            color: #37383d;
+        }
+    </style>
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Фронтенд Всемогущий. Что умеет веб-браузер</h1>
+        <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+    </header>
+
+    <!-- <section class="slide clear" id="cover">
+        <div style="text-align: center; padding-top: 100px;">
+            <h2>Фронтенд Всемогущий. Что умеет веб-браузер</h2>
+            <p><a href="https://alexey-avdeev.com/">Алексей Авдеев</a>, <a href="https://mish.design/">Mish.Design</a></p>
+        </div>
+        <style>
+            #cover {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #eed8b7;
+            }
+            #cover h2 {
+                margin: 0;
+                color: #37383d;
+                font-size: 90px;
+            }
+            #cover p {
+                margin: 10px 0 0;
+                color: #37383d;
+                font-size: 30px;
+            }
+            #cover p a {
+                color: #37383d;
+            }
+        </style>
+    </section> -->
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/Title.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>👨‍💻 О себе</h2>
+
+        <ol>
+            <li>👨 Алексей Авдеев (<a href="https://github.com/avdeev">https://github.com/avdeev</a>)</li>
+            <li class="next">👔 CTO, руковожу разработкой</li>
+            <li class="next">🏙️ Из Нижнего Новгорода, работаю в Москве</li>
+            <li class="next">🌐 <a href="https://mish.design/">Mish.Design</a></li>
+            <li class="next">👴 Программирую с 2002 года</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Задачи CTO</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/scale_1200.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/NCSAMosaic.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <img src="pictures/qrcode_caniuse.com.png" alt="" style="width: 30%; margin-bottom: -40px; margin-top: -50px;">
+            <br>
+            <a href="https://caniuse.com/usage-table" style="font-size: 0.8em;">caniuse.com</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Что можно сделать?</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Веб-сайт</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Мобильное приложение</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/Android-System-Webview.jpeg" alt="" style="width: 60%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover h" src="pictures/webview_browser_2_200.png" alt="" style="height: 90%;">
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/2048.png" alt="" style="width: 72%;">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Progressive<br>web&nbsp;app<br>(PWA)</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/pwa.png" alt="" style="width: 80%;">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <img src="pictures/qrcode_whatpwacando.today.png" alt="" style="width: 30%; margin-bottom: -40px; margin-top: -50px;">
+            <br>
+            <a href="https://whatpwacando.today/" style="font-size: 0.8em;">whatpwacando.today</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Trusted web&nbsp;activity<br>(TWA)</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <img src="pictures/qrcode_www.pwabuilder.com.png" alt="" style="width: 30%; margin-bottom: -40px; margin-top: -50px;">
+            <br>
+            <a href="https://www.pwabuilder.com/" style="font-size: 0.8em;">pwabuilder.com</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Бэкенд</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/headless.jpeg" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/headless-2.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Игра</h2>
+    </section>
+
+    <section class="slide clear" style="background-color: #594838;">
+        <img class="cover h" src="pictures/quake-js.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <img src="pictures/qrcode_www.quakejs.com.png" alt="" style="width: 30%; margin-bottom: -40px; margin-top: -50px;">
+            <br>
+            <a href="http://www.quakejs.com/" style="font-size: 0.8em;">quakejs.com</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">VR / AR</h2>
+    </section>
+
+    <section class="slide">
+        <img class="cover w" src="pictures/webxr-logo.svg" alt="" style="width: 80%;">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <img src="pictures/qrcode_immersiveweb.dev.png" alt="" style="width: 30%; margin-bottom: -40px; margin-top: -50px;">
+            <br>
+            <a href="https://immersiveweb.dev/" style="font-size: 0.8em;">immersiveweb.dev</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Банкомат</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/atm.jpeg" alt="">
+    </section>
+
+    <section class="slide clear" style="background-color: #b74b01;">
+        <img class="cover h" src="pictures/atm-photo.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Касса</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/cashbox-cover.jpeg" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/cashbox.png" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/cashbox-how.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Умные<br>устройства</h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <img src="pictures/qrcode_plasma.sberdevices.ru.png" alt="" style="width: 30%; margin-bottom: -40px; margin-top: -50px;">
+            <br>
+            <a href="https://plasma.sberdevices.ru/current/?path=/docs/about--page" style="font-size: 0.8em;">plasma.sberdevices.ru</a>
+        </h2>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Операционная система</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" src="pictures/overview.png" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/ChromeOS_89_screenshot.webp" alt="">
+    </section>
+
+    <section class="slide clear">
+        <img class="cover w" src="pictures/chrome-book.jpeg" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Интерфейс космического корабля</h2>
+    </section>
+
+    <section class="slide clear">
+        <img class="cover h" src="pictures/dragon-crew.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Да здравствует веб-платформа!</h2>
+    </section>
+
+    <section class="slide">
+        <h2>👏 Спасибо!</h2>
+
+        <ul>
+            <li>👨 Алексей Авдеев</li>
+            <li>🌐 <a href="https://github.com/avdeev">https://github.com/avdeev</a></li>
+            <li>🌐 <a href="https://twitter.com/avdeev_alexey">https://twitter.com/avdeev_alexey</a></li>
+            <li>🌐 <a href="https://mish.design/">Mish.Design</a></li>
+        </ul>
+
+        <img src="pictures/iam.jpeg" alt="я" style="height: 250px; position: absolute; right: 55px; top: 141px;">
+    </section>
+
+        <!-- <section class="slide clear">
+            <img class="cover h" src="pictures/promocode.png" alt="">
+        </section> -->
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
